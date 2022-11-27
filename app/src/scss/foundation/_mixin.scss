@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+/* -------------------------------------------*/
+// MediaQuery
+$mq-breakpoints: ('xs': 361px,
+	'sm': 480px,
+	'md': 667px,
+	'lg': 1000px,
+	'xl': 1380px,
+	'xxl': 1780px,
+) !default;
+
+@mixin mq($breakpoint: md, $rule: min) {
+	$breakpoint: map-get($mq-breakpoints, $breakpoint);
+
+	@if $rule==max {
+		@media screen and (max-width: $breakpoint) {
+			@content;
+		}
+	}
+
+	@else {
+		@media not all and (max-width: $breakpoint) {
+			@content;
+		}
+	}
+}
+
+
+//transition
+@mixin transition($second:0.5s, $property:color) {
+	transition: $second;
+	transition-property: $property;
+}
+
+// Prefix
+@mixin prefix($property, $value) {
+
+	@each $prefix in -webkit-,
+	-moz-,
+	'' {
+		#{$prefix}#{$property}: $value;
+	}
+}
+
+
+@mixin grow {
+	flex-grow: 1;
+}
+
+@mixin windowfull($property: top, $height: 100%) {
+	content: "";
+	position: absolute;
+	#{$property}: 0;
+	left: 0;
+	display: block;
+	width: 100vw;
+	height: $height;
+	margin: 0 calc(50% - 50vw);
+	z-index: -1;
+}
+
+// text
+@mixin truncate($width: 100%) {
+	width: $width;
+	max-width: 100%;
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+// aspect
+@mixin image-before($height) {
+	&::before {
+		content: "";
+		display: block;
+		padding-top: $height;
+	}
+}
+
+@mixin image-block {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+// text
+@mixin text-hidden {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+@mixin awesome {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+}
+
+// point
+@mixin triangle($width: 10px, $height: 10px, $color: #000, $dir:top) {
+	width: 0;
+	height: 0;
+
+	@if $dir=='left' {
+		border-width: #{$height/2} 0 #{$height/2} #{$width};
+		border-color: transparent transparent transparent $color;
+	}
+
+	@else if $dir=='bottom' {
+		border-width: 0 #{$width/2} #{$height} #{$width/2};
+		border-color: transparent transparent $color transparent;
+	}
+
+	@else if $dir=='right' {
+		border-width: #{$height/2} #{$width} #{$height/2} 0;
+		border-color: transparent $color transparent transparent;
+	}
+
+	@else {
+		border-width: #{$height} #{$width/2} 0 #{$width/2};
+		border-color: $color transparent transparent transparent;
+	}
+
+	border-style: solid;
+}
+
+@mixin arrow($size: 10px, $color: #000, $border:1px, $posix: -50%, $posiy: -50%, $dir: right) {
+	width: $size;
+	height: $size;
+	border-top: $border solid $color;
+	border-right: $border solid $color;
+
+	@if $dir=='bottom' {
+		-webkit-transform: translate($posix, $posiy) rotate(135deg);
+		transform: translate($posix, $posiy) rotate(135deg);
+	}
+
+	@else if $dir=='left' {
+		-webkit-transform: translate($posix, $posiy) rotate(-135deg);
+		transform: translate($posix, $posiy) rotate(-135deg);
+	}
+
+	@else if $dir=='top' {
+		-webkit-transform: translate($posix, $posiy) rotate(-45deg);
+		transform: translate($posix, $posiy) rotate(-45deg);
+	}
+
+	@else {
+		-webkit-transform: translate($posix, $posiy) rotate(45deg);
+		transform: translate($posix, $posiy) rotate(45deg);
+	}
+
+	-webkit-transform-origin:center center;
+	transform-origin:center center;
+}
+
+// form
+@mixin placeholder-color($color) {
+	&:placeholder-shown {
+		color: $color;
+	}
+
+	&::-webkit-input-placeholder {
+		color: $color;
+	}
+
+	&:-moz-placeholder {
+		color: $color;
+		opacity: 1;
+	}
+
+	&:-ms-input-placeholder {
+		color: $color;
+	}
+}

@@ -1,0 +1,99 @@
+@charset "utf-8";
+@use "../foundation"as *;
+
+/* -------------------------------------------*/
+.u-db {
+	display: block;
+}
+
+.u-dn {
+	display: none;
+}
+
+.u-pc {
+	@include mq(lg, max) {
+		display: none;
+	}
+}
+
+.u-pt {
+	@include mq(md, max) {
+		display: none !important;
+	}
+}
+
+.u-st {
+	@include mq(lg) {
+		display: none !important;
+	}
+}
+
+.u-sp {
+	@include mq(md) {
+		display: none !important;
+	}
+}
+
+.u-mask--c-black {
+	filter: brightness(0);
+}
+
+.u-mask--c-white {
+	filter: brightness(0) invert(1);
+}
+
+.u-con--md {
+	max-width: var(--content_width);
+	margin: 0 auto;
+	padding: 0 var(--content-both_space);
+}
+
+.u-con--lg {
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.u-c-white {
+	color: $c-white;
+}
+
+.u-c--b-white {
+	color: $c-white;
+}
+
+.u-z-1 {
+	z-index: -1;
+}
+
+.u-z1 {
+	z-index: 1;
+}
+
+.u-z2 {
+	z-index: 2;
+}
+
+.u-z3 {
+	z-index: 3;
+}
+
+.u-z10 {
+	z-index: 10;
+}
+
+.u-z50 {
+	z-index: 50;
+}
+
+.u-z100 {
+	z-index: 100;
+}
+
+.u-z999 {
+	z-index: 999;
+}
+
+.hyphen {
+	position: relative;
+	top: -0.08em;
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" width="44.26" height="44.26" viewBox="0 0 44.26 44.26">
+  <g id="_レイアウト" data-name="レイアウト">
+    <g>
+      <circle cx="22.13" cy="22.13" r="22.13" style="fill: #fff;"/>
+      <g>
+        <line x1="10.76" y1="10.27" x2="17.83" y2="10.27" style="fill: none; stroke: #fbab40; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+        <g>
+          <path d="M10.76,10.27c-.66,.12-.71,1-.66,1.5,.66,11.94,9.85,20.42,21.16,21.09,.46,0,1.41-.17,1.41-.66" style="fill: none; stroke: #fbab40; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+          <path d="M19.7,23.29c1.19,1.18,2.53,2.2,3.99,3.02" style="fill: none; stroke: #fbab40; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+          <polyline points="32.68 25.12 26.32 23.69 23.69 26.31" style="fill: none; stroke: #fbab40; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+          <polyline points="17.83 10.27 19.26 16.63 16.67 19.31" style="fill: none; stroke: #fbab40; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+          <line x1="32.68" y1="25.12" x2="32.68" y2="32.19" style="fill: none; stroke: #fbab40; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

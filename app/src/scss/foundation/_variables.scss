@@ -1,0 +1,31 @@
+@charset "utf-8";
+@use "mixin"as mix;
+
+/* -------------------------------------------*/
+
+:root {
+	--content_width: 1030px;
+	--content_width-xs: 780px;
+	--content_width-sm: 830px;
+	--content_width-md: 930px;
+	--cta_width: 800px;
+	--content-both_space: 15px;
+	--header_height: 100px;
+
+	@include mix.mq(xxl) {
+		--content_width: 1230px;
+		--content_width-xs: 980px;
+		--content_width-sm: 1030px;
+		--cta_width: 1030px;
+	}
+
+	@include mix.mq(lg, max) {
+		--content_width: 800px;
+		--header_height: 67px;
+	}
+
+	@include mix.mq(md, max) {
+		--content_width: 650px;
+		--content-both_space: 15px;
+	}
+}

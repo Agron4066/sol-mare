@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" width="22.95" height="16.51" viewBox="0 0 22.95 16.51">
+  <g id="_レイアウト" data-name="レイアウト">
+    <g>
+      <path d="M0,0V16.51H22.95V0H0ZM21.69,15.26H1.26V1.26H21.69V15.26Z" style="fill: #ec6051;"/>
+      <path d="M5.25,6.97c1.12,0,2.04-.91,2.04-2.04s-.91-2.04-2.04-2.04-2.04,.91-2.04,2.04,.91,2.04,2.04,2.04Z" style="fill: #ec6051;"/>
+      <rect x="8.68" y="3.92" width="10.94" height="1.91" style="fill: #ec6051;"/>
+      <rect x="3.32" y="9.11" width="16.3" height="1.18" style="fill: #ec6051;"/>
+      <rect x="3.32" y="11.58" width="16.3" height="1.18" style="fill: #ec6051;"/>
+    </g>
+  </g>
+</svg>
