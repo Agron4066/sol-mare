@@ -1,17 +1,18 @@
 @charset "utf-8";
 
 /* -------------------------------------------*/
-$c-base:#fff4df;
-$c-main: #ec6051;
-$c-accent: #fbab40;
-$c-primary: #fbab40;
-$c-text-base:#323232;
-$c-text-main:#44403f;
+$c-base: #000000;
+$c-main: #EB6877;
+$c-accent: #000000;
+$c-primary: #F6DB8C;
+$c-secondary: #F5D473;
+$c-text-base: #2E2D2D;
+$c-text-main: #000000;
 $c-white:#fff;
 $c-black:#000;
 $c-gray:#eaeaea;
-$c-pink:#e65568;
-$c-brown:#643916;
+$c-pink: #000000;
+$c-brown: #000000;
 $c-ttl-bg:#ffe2de;
 
 @mixin c-grad--main {

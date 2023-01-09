@@ -1,0 +1,13 @@
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eb6877;
+      }
+    </style>
+  </defs>
+  <rect id="長方形_9" data-name="長方形 9" class="cls-1" width="10" height="10" transform="translate(22.071 7.071) rotate(135)"/>
+  <rect id="長方形_9-2" data-name="長方形 9" class="cls-1" width="10" height="10" transform="translate(30 15) rotate(135)"/>
+  <rect id="長方形_9-3" data-name="長方形 9" class="cls-1" width="10" height="10" transform="translate(14.142 15) rotate(135)"/>
+  <rect id="長方形_9-4" data-name="長方形 9" class="cls-1" width="10" height="10" transform="translate(22.071 22.929) rotate(135)"/>
+</svg>

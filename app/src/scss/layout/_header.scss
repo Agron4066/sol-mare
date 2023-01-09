@@ -1,0 +1,52 @@
+@charset "utf-8";
+@use "../foundation"as *;
+
+/* -------------------------------------------*/
+.l-header{
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  padding-top: 3.0rem;
+  width: 100%;
+  background-color: $c-white;
+  &__logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    column-gap: 2.3rem;
+    margin: 0 auto;
+    img{
+      display: block;
+      width: 3.0rem;
+      height: 3.0rem;
+    }
+  }
+  &__name{
+    padding-top: 0.4rem;
+    p{
+      letter-spacing: 0.05em;
+      line-height: 1.333;
+      color: $c-main;
+      &:first-child{
+        font-size: 1.8rem;
+      }
+      &:last-child{
+        margin-top: 0.1rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &__inner{
+
+    margin-top: 3.0rem;
+    border-top: 0.2rem solid $c-main;
+    border-bottom: 0.2rem solid $c-main;
+  }
+  &__trigger{
+    @include mq(lg,min){
+      display: none;
+    }
+  }
+}
